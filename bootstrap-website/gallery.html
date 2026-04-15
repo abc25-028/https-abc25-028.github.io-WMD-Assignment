@@ -1,210 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Rib2's Sparkle and Prestige Cleaners</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Rib2 Cleaners</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin:0;
-            background-color: #f8f9fa;
+  <!-- Bootstrap CSS (ONLY ONE) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        }
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
-        header {
-            background-color: #0a3d62;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+  <style>
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
 
-        header h1 {
-            margin: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .gallery{
-            padding:40px;
-            text-align: center;
-        }
-
-        .gallery h2 {
-            margin-bottom: 30px;
-            color:#0a3d62;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .grid img{
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .grid img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        footer {
-            background-color: #0a3d62;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-
     <a class="navbar-brand" href="index.html">Rib2's Sparkle and Prestige Cleaners</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
-
   </div>
 </nav>
 
-
-    <header>
-        <h1> Rib2's Sparkle and Prestige Cleaners Gallery</h1>
-        <p> Bringing Shine to Every Space</p>
-    </header>
-
-    <nav.>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="services.html">Services</a>
-    </nav>
-
-    <section class="gallery">
-        <h2>Our Work in Action</h2>
-        <div class="grid">
-            <img src="images/cleaned-living-room.jpg" alt="Cleaned Living Room">
-            <img src="images/office-cleaning.jpg" alt="Office Cleaning">
-            <img src="images/deep-cleaning.jpg" alt="Deep Cleaning">
-            <img src="images/kitchen-cleaning.jpg" alt="Kitchen Cleaning">
-            <img src="images/bathroom-cleaning.jpg" alt="Bathroom Cleaning">
-            <img src="images/floor-cleaning.jpg" alt="Floor Cleaning">
-
-            <!-- Bootstrap JS and dependencies --> 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-        </div>
-    </section>
-
-    <div class="container mt-5">
-  <h2 class="text-center mb-4">My Gallery</h2>
-
-  <div class="row">
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="" class="ihttps://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6197108%2Fpexels-photo-6197108.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6197108.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=BFxmjZZl8PMFRM&vet=12ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIGBAB..i&w=5904&h=3936&hcb=2&ved=2ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIGBAB" alt="Gallery Image 1" class="img-fluid rounded shadow">
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6197116%2Fpexels-photo-6197116.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6197116.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=wgcCL-WwQktm0M&vet=12ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIIxAB..i&w=3922&h=5883&hcb=2&ved=2ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIIxAB" alt="Gallery Image 2" class="img-fluid rounded shadow">
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6195131%2Fpexels-photo-6195131.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6195131.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=FSmZEmuuthRQgM&vet=12ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIUxAB..i&w=3923&h=5885&hcb=2&ved=2ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIUxAB" alt="Gallery Image 3" class="img-fluid rounded shadow">
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6196691%2Fpexels-photo-6196691.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6196691.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=XMBuC00zsJjOYM&vet=12ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgzEAE..i&w=3965&h=5947&hcb=2&ved=2ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgzEAE" alt="Gallery Image 4" class="img-fluid rounded shadow">
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1417833187%2Fphoto%2Fprofessional-cleaner-vacuuming-a-carpet.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3D5h8NBR190d46Ni4MclqJ7Zf9ZOtf3TM3gPRJaHUdMjk%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcleaning-service&docid=kdq4BiZJ2EHW1M&tbnid=r7ICgQSwSRbhlM&vet=12ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIXBAB..i&w=612&h=408&hcb=2&ved=2ahUKEwjer9XTq9-TAxVKTkEAHW92FgMQnPAOegQIXBAB" alt="Gallery Image 5" class="img-fluid rounded shadow">
-      </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6195123%2Fpexels-photo-6195123.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6195123.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=ffZklMgjE1fDFM&vet=12ahUKEwje7ca8rN-TAxWiTkEAHT6hIZM4ChCc8A56BAhQEAE..i&w=5824&h=3883&hcb=2&ved=2ahUKEwje7ca8rN-TAxWiTkEAHT6hIZM4ChCc8A56BAhQEAE" alt="Gallery Image 6" class="img-fluid rounded shadow">
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6195277%2Fpexels-photo-6195277.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6195277.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2520service%2F&docid=6PoVszfJFGHf4M&tbnid=wTTjiteEoXNVSM&vet=12ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgdEAE..i&w=5851&h=3901&hcb=2&ved=2ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgdEAE" alt="Gallery Image 7" class="img-fluid rounded shadow">
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-      <img src="https://www.google.com/imgres?q=free%20cleaning%20pictures%20for%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6196691%2Fpexels-photo-6196691.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-tima-miroshnichenko-6196691.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcleaning%2F&docid=Z9VrVfzUTH-9KM&tbnid=XMBuC00zsJjOYM&vet=12ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgzEAE..i&w=3965&h=5947&hcb=2&ved=2ahUKEwi3t-_TrN-TAxXqYEEAHRNUOZs4FBCc8A56BAgzEAE" alt="Gallery Image 8" class="img-fluid rounded shadow">
-      </div>
-
-
+<!-- HEADER -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1>Our Gallery</h1>
+    <p class="lead">See our cleaning work in action ✨</p>
   </div>
-</div>
- 
+</header>
 
+<!-- GALLERY -->
+<section class="container my-5">
+  <div class="row gallery">
 
-    <footer>
-        <footer class="bg-dark text-white text-center p-3 mt-5">
-  <p>&copy; 2026 Rib2's Sparkle and Prestige Cleaners | Built with Bootstrap 5</p>
-    </footer>
+    <!-- IMAGE 1 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Cleaning 1" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17" alt="Cleaning 2" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 3 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473" alt="Cleaning 3" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 4 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1603714228681-b399854b8f80" alt="Cleaning 4" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 5 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac" alt="Cleaning 5" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 6 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Cleaning 6" class="img-fluid">
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary text-white text-center py-5">
+  <h2>Want results like this?</h2>
+  <a href="contact.html" class="btn btn-light">Book a Cleaning</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2026 Rib2's Sparkle and Prestige Cleaners</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
