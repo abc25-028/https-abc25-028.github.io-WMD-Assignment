@@ -1,147 +1,237 @@
-body { 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    font-family: Arial, sans-serif; 
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
 
-    color: #333; 
+/* NAVBAR */
+.navbar {
+  background-color: #111 !important;
+}
 
-    background-color: #f70c6e; 
+.navbar-brand {
+  font-weight: bold;
+  color: #f705a6 !important;
+}
 
-    margin: 0; 
+.nav-link {
+  color: white !important;
+}
 
-    padding: 0; 
+.nav-link:hover {
+  color: #f705a6 !important;
+}
 
-    line-height: 1.6; 
+/* HEADER / HERO */
+header {
+  background-color: #f705a6;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: #f705a6;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d9048f;
+}
+
+/* SECTIONS */
+section {
+  margin: 50px 0;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* GALLERY IMAGES */
+.gallery img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: #f705a6;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode .card {
+  background-color: #222;
+  color: white;
+}
+
+#typing-headline { 
+
+    min-height: 80px; 
+
+    border-right: 3px solid #4CAF50; 
+
+    display: inline-block; 
+
+    animation: blink 0.75s step-end infinite; 
 
 } 
-header { 
 
-    background-color: #f705a6; 
+@keyframes blink { 
 
-    color: white; 
+    from, to { border-color: transparent; } 
 
-    padding: 20px; 
+    50% { border-color: #4CAF50; } 
 
-    text-align: center; 
+}
 
-} 
+#back-to-top { 
 
- 
-
-header h1 { 
-
-    margin: 0; 
-
-} 
-
- 
-
-nav a { 
-
-    color: rgb(248, 11, 82); 
-
-    text-decoration: none; 
-
-    margin: 0 10px; 
-
-} 
-nav a:hover { 
-
-    text-decoration: underline; 
-
-} 
-main { 
-
-    padding: 20px; 
-
-    max-width: 800px; 
-
-    margin: 0 auto; 
-
-} 
-
- 
-
-main img { 
-
-    max-width: 100%; 
-
-    height: auto; 
-
-    display: block; 
-
-    margin: 20px 0; 
-
-} 
-main { 
-
-    padding: 20px; 
-
-    max-width: 800px; 
-
-    margin: 0 auto; 
-
-} 
-
- 
-
-main img { 
-
-    max-width: 100%; 
-
-    height: auto; 
-
-    display: block; 
-
-    margin: 20px 0; 
-
-} 
-footer { 
-
-    background-color: #333; 
-
-    color: rgb(228, 9, 93); 
-
-    text-align: center; 
-
-    padding: 10px; 
+    display: none; 
 
     position: fixed; 
 
-    width: 100%; 
+    bottom: 20px; 
 
-    bottom: 0; 
+    right: 20px; 
 
-}
-p { 
+    background-color: #4CAF50; 
 
-    font-size: 1.1em; 
+    color: white; 
+
+    width: 50px; 
+
+    height: 50px; 
+
+    border-radius: 50%; 
+
+    border: none; 
+
+    font-size: 24px; 
+
+    cursor: pointer; 
+
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); 
+
+    transition: background-color 0.3s; 
 
 } 
 
-h1, h2 { 
+#back-to-top:hover { background-color: #45a049; } 
 
-    color: #080808fb; 
+.fun-fact-container { 
 
-}
-a { 
+    margin: 30px 0; 
 
-    color: #070707; 
+    padding: 20px; 
 
-    text-decoration: none; 
+    background-color: #f0f0f0; 
+
+    border-radius: 10px; 
+
+    text-align: center; 
 
 } 
 
  
 
-a:hover { 
+reveal-fact { 
 
-    text-decoration: underline; 
+    background-color: #4CAF50; 
+
+    color: white; 
+
+    border: none; 
+
+    padding: 10px 20px; 
+
+    font-size: 16px; 
+
+    cursor: pointer; 
+
+    border-radius: 5px; 
+
+    transition: background-color 0.3s; 
+
+}
+#reveal-fact:hover { 
+
+    background-color: #45a049; 
 
 } 
-img { 
 
-    border: 5px solid #102bc5; 
+ 
 
-    border-radius: 10px; 
+.hidden-fact { 
+
+    display: none; 
+
+    font-size: 18px; 
+
+    margin-top: 20px; 
+
+    padding: 15px; 
+
+    background-color: white; 
+
+    border-radius: 5px; 
+
+    animation: fadeIn 0.5s; 
+
+} 
+
+ 
+
+.hidden-fact.show { 
+
+    display: block; 
+
+} 
+
+ 
+
+@keyframes fadeIn { 
+
+    from { opacity: 0; transform: translateY(-10px); } 
+
+    to   { opacity: 1; transform: translateY(0); } 
 
 } 
