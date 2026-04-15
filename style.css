@@ -20,7 +20,7 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: #f705a6 !important;
+  color: #000000 !important;
 }
 
 .nav-link {
@@ -28,12 +28,12 @@ body {
 }
 
 .nav-link:hover {
-  color: #f705a6 !important;
+  color: #000000 !important;
 }
 
 /* HEADER / HERO */
 header {
-  background-color: #f705a6;
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -45,12 +45,12 @@ header h1 {
 
 /* BUTTONS */
 .btn-primary {
-  background-color: #f705a6;
+  background-color: #000000;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #d9048f;
+  background-color: #000000;
 }
 
 /* SECTIONS */
@@ -82,7 +82,7 @@ section {
 /* FOOTER */
 footer {
   background-color: #111;
-  color: #f705a6;
+  color: #000000;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
