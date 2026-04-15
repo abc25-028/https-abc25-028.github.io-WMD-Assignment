@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Rib2 Cleaners</title>
+
+  <!-- Bootstrap CSS (ONLY ONE) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Rib2's Sparkle and Prestige Cleaners</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1>Our Gallery</h1>
+    <p class="lead">See our cleaning work in action ✨</p>
+  </div>
+</header>
+
+<!-- GALLERY -->
+<section class="container my-5">
+  <div class="row gallery">
+
+    <!-- IMAGE 1 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Cleaning 1" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17" alt="Cleaning 2" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 3 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473" alt="Cleaning 3" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 4 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1603714228681-b399854b8f80" alt="Cleaning 4" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 5 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac" alt="Cleaning 5" class="img-fluid">
+    </div>
+
+    <!-- IMAGE 6 -->
+    <div class="col-md-4 mb-4">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Cleaning 6" class="img-fluid">
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary text-white text-center py-5">
+  <h2>Want results like this?</h2>
+  <a href="contact.html" class="btn btn-light">Book a Cleaning</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2026 Rib2's Sparkle and Prestige Cleaners.All rights reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
