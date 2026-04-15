@@ -15,6 +15,7 @@ body {
 /* NAVBAR */
 .navbar {
   background-color: #111 !important;
+  <button id="theme-toggle" class="btn btn-primary ms-3">🌙 Dark Mode</button>
 }
 
 .navbar-brand {
@@ -70,4 +71,78 @@ footer {
   color: #f705a6;
   text-align: center;
   padding: 15px;
+}
+/* FORCE REMOVE BOOTSTRAP COLORS */
+.bg-primary {
+  background-color: #f705a6 !important;
+}
+
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-dark {
+  background-color: #f705a6 !important;
+  color: white !important;
+  border: none;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-dark:hover {
+  background-color: #d9048f !important;
+}
+
+/* FORM BACKGROUND */
+form {
+  background-color: #ffffff;
+}
+/* DARK MODE FULL SITE */
+body.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+/* NAVBAR */
+body.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+/* HEADER */
+body.dark-mode header {
+  background-color: #222;
+  color: white;
+}
+
+/* CARDS / FORMS */
+body.dark-mode .card,
+body.dark-mode form {
+  background-color: #222;
+  color: white;
+}
+
+/* INPUTS */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* FOOTER */
+body.dark-mode footer {
+  background-color: #000;
+  color: #f705a6;
+}
+
+/* BUTTON */
+#theme-toggle {
+  background-color: #f705a6;
+  border: none;
+}
+
+#theme-toggle:hover {
+  background-color: #d9048f;
+}
+body, header, .card, footer, form {
+  transition: all 0.3s ease;
 }
