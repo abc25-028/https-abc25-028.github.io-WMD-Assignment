@@ -20,7 +20,7 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: #ffffff !important;
+  color: #f705a6 !important; /* PINK BRAND */
 }
 
 .nav-link {
@@ -28,13 +28,13 @@ body {
 }
 
 .nav-link:hover {
-  color: #111 !important;
+  color: #f705a6 !important;
 }
 
 /* HEADER / HERO */
 header {
-  background-color: #fcf9f9;
-  color: #111;
+  background-color: #f705a6; /* PINK */
+  color: white;
   text-align: center;
   padding: 60px 20px;
 }
@@ -45,12 +45,12 @@ header h1 {
 
 /* BUTTONS */
 .btn-primary {
-  background-color: #000000;
+  background-color: #f705a6;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #000000;
+  background-color: #d9048f;
 }
 
 /* SECTIONS */
@@ -63,13 +63,14 @@ section {
   border: none;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-/* GALLERY IMAGES */
+/* GALLERY */
 .gallery img {
   border-radius: 10px;
   transition: 0.3s;
@@ -82,7 +83,7 @@ section {
 /* FOOTER */
 footer {
   background-color: #111;
-  color: #000000;
+  color: #f705a6;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
@@ -103,135 +104,81 @@ body.dark-mode .card {
   color: white;
 }
 
-#typing-headline { 
-
-    min-height: 80px; 
-
-    border-right: 3px solid #4CAF50; 
-
-    display: inline-block; 
-
-    animation: blink 0.75s step-end infinite; 
-
-} 
-
-@keyframes blink { 
-
-    from, to { border-color: transparent; } 
-
-    50% { border-color: #4CAF50; } 
-
+/* TYPING EFFECT */
+#typing-headline {
+  min-height: 80px;
+  border-right: 3px solid #f705a6;
+  display: inline-block;
+  animation: blink 0.75s step-end infinite;
 }
 
-#back-to-top { 
-
-    display: none; 
-
-    position: fixed; 
-
-    bottom: 20px; 
-
-    right: 20px; 
-
-    background-color: #4CAF50; 
-
-    color: white; 
-
-    width: 50px; 
-
-    height: 50px; 
-
-    border-radius: 50%; 
-
-    border: none; 
-
-    font-size: 24px; 
-
-    cursor: pointer; 
-
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); 
-
-    transition: background-color 0.3s; 
-
-} 
-
-#back-to-top:hover { background-color: #45a049; } 
-
-.fun-fact-container { 
-
-    margin: 30px 0; 
-
-    padding: 20px; 
-
-    background-color: #f0f0f0; 
-
-    border-radius: 10px; 
-
-    text-align: center; 
-
-} 
-
- 
-
-reveal-fact { 
-
-    background-color: #4CAF50; 
-
-    color: white; 
-
-    border: none; 
-
-    padding: 10px 20px; 
-
-    font-size: 16px; 
-
-    cursor: pointer; 
-
-    border-radius: 5px; 
-
-    transition: background-color 0.3s; 
-
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #f705a6; }
 }
-#reveal-fact:hover { 
 
-    background-color: #45a049; 
+/* BACK TO TOP BUTTON */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f705a6;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
 
-} 
+#back-to-top:hover {
+  background-color: #d9048f;
+}
 
- 
+/* FUN FACT SECTION */
+.fun-fact-container {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+}
 
-.hidden-fact { 
+/* FIXED BUTTON SELECTOR (IMPORTANT) */
+#reveal-fact {
+  background-color: #f705a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-    display: none; 
+#reveal-fact:hover {
+  background-color: #d9048f;
+}
 
-    font-size: 18px; 
+/* HIDDEN FACT */
+.hidden-fact {
+  display: none;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  animation: fadeIn 0.5s;
+}
 
-    margin-top: 20px; 
+.hidden-fact.show {
+  display: block;
+}
 
-    padding: 15px; 
-
-    background-color: white; 
-
-    border-radius: 5px; 
-
-    animation: fadeIn 0.5s; 
-
-} 
-
- 
-
-.hidden-fact.show { 
-
-    display: block; 
-
-} 
-
- 
-
-@keyframes fadeIn { 
-
-    from { opacity: 0; transform: translateY(-10px); } 
-
-    to   { opacity: 1; transform: translateY(0); } 
-
-} 
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
