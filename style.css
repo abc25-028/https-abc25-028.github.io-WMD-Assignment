@@ -15,7 +15,12 @@ body {
 /* NAVBAR */
 .navbar {
   background-color: #111 !important;
-  <button id="theme-toggle" class="btn btn-primary ms-3">🌙 Dark Mode</button>
+}
+
+  /* Logo styling */
+.logo {
+    width: 120px;
+    height: auto;
 }
 
 .navbar-brand {
@@ -145,4 +150,9 @@ body.dark-mode footer {
 }
 body, header, .card, footer, form {
   transition: all 0.3s ease;
+}
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
 }
