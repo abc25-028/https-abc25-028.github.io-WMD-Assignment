@@ -17,12 +17,20 @@ body {
   background-color: #111 !important;
 }
 
-  /* Logo styling */
 .logo {
-    width: 120px;
+    width: 100px;           /* increase size */
     height: auto;
-}
 
+    border: 3px solid white;  /* border thickness + color */
+    border-radius: 10px;      /* rounded corners */
+
+    padding: 5px;             /* space inside border */
+
+    transition: transform 0.3s ease; /* smooth animation */
+}
+.logo:hover {
+    transform: scale(1.2); /* zoom effect */
+}
 .navbar-brand {
   color: #f705a6 !important;
   font-weight: bold;
@@ -76,17 +84,6 @@ header {
     overflow: hidden;
 }
 
-/* Background video */
-#bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
 /* Dark overlay */
 .overlay {
     position: absolute;
@@ -134,7 +131,7 @@ footer {
 
 /* FORM BACKGROUND */
 form {
-  background-color: #ffffff;
+  background-color: #f70994;
 }
 /* DARK MODE FULL SITE */
 body.dark-mode {
