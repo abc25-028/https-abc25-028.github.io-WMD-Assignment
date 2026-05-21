@@ -18,7 +18,7 @@ body {
 }
 
 .logo{
-  border-radious: 50px;
+  border-spacing: 50px;
   object-fit: cover;
   margin-right: 10px;
 
