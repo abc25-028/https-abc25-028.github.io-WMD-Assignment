@@ -200,3 +200,75 @@ body, header, .card, footer, form {
   width: 40px;
   object-fit: cover;
 }
+
+/* ======================================================
+   MOBILE RESPONSIVE DESIGN
+====================================================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR BRAND */
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+
+  /* LOGO */
+  .logo {
+    width: 70px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* CARDS */
+  .card {
+    margin-bottom: 20px;
+  }
+
+  /* FORM */
+  form {
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ======================================================
+   SMALL PHONE DEVICES
+====================================================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
