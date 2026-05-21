@@ -25,18 +25,7 @@ const companyInfo = {
 // ======================================================
 // WELCOME MESSAGE
 // ======================================================
-window.addEventListener("load", () => {
-
-    setTimeout(() => {
-
-        alert(
-            "Welcome to " +
-            companyInfo.name +
-            "!\n\nProfessional cleaning for homes, offices & businesses."
-        );
-
-    }, 1000);
-});
+console.log("Welcome to " + companyInfo.name);
 
 
 // ======================================================
@@ -254,9 +243,19 @@ const contactForm = document.getElementById("contactForm");
 
 if(contactForm){
 
+    const errorMessage =
+        document.getElementById("error-message");
+
+    const successMessage =
+        document.getElementById("success-message");
+
     contactForm.addEventListener("submit", function(e){
 
         e.preventDefault();
+
+        // CLEAR OLD MESSAGES
+        errorMessage.innerHTML = "";
+        successMessage.innerHTML = "";
 
         const name =
             document.getElementById("name").value.trim();
@@ -267,25 +266,27 @@ if(contactForm){
         const message =
             document.getElementById("message").value.trim();
 
+        // VALIDATION
         if(name === "" || email === "" || message === ""){
 
-            alert("Please fill in all fields.");
+            errorMessage.innerHTML =
+                "Please fill in all fields.";
 
             return;
         }
 
         if(!email.includes("@")){
 
-            alert("Please enter a valid email address.");
+            errorMessage.innerHTML =
+                "Please enter a valid email address.";
 
             return;
         }
 
-        alert(
-            "Thank you " +
-            name +
-            "! Your message has been sent successfully."
-        );
+        // SUCCESS MESSAGE
+        successMessage.innerHTML =
+            "Thank you " + name +
+            "! Your message has been sent successfully.";
 
         contactForm.reset();
     });
