@@ -272,3 +272,62 @@ body, header, .card, footer, form {
     width: 60px;
   }
 }
+
+/* ======================================================
+   PRICING PAGE
+====================================================== */
+
+/* PRICE COLOR */
+.price-color{
+    color: #f705a6;
+    font-weight: bold;
+}
+
+/* TABLE HEADER */
+.custom-table-header{
+    background-color: #f705a6;
+    color: white;
+}
+
+/* PRICING CARDS */
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* CARD HOVER */
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BUTTONS */
+.btn-primary{
+    background-color: #f705a6 !important;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #d9048f !important;
+}
+
+/* HERO SECTION */
+.hero{
+    background-color: #f705a6;
+    color: white;
+}
+
+/* TABLE */
+table{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* DARK MODE TABLE */
+body.dark-mode table{
+    color: white;
+}
+
+body.dark-mode .table{
+    background-color: #222;
+}
