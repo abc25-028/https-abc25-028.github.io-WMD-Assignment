@@ -279,13 +279,13 @@ body, header, .card, footer, form {
 
 /* PRICE COLOR */
 .price-color{
-    color: #f705a6;
+    color: #ff09ad;
     font-weight: bold;
 }
 
 /* TABLE HEADER */
 .custom-table-header{
-    background-color: #f705a6;
+    background-color: #ff04ab;
     color: white;
 }
 
@@ -303,7 +303,7 @@ body, header, .card, footer, form {
 
 /* BUTTONS */
 .btn-primary{
-    background-color: #f705a6 !important;
+    background-color: #ff00aa !important;
     border: none;
 }
 
